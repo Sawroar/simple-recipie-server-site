@@ -20,7 +20,7 @@ async function run() {
     try {
         const serviceCollection = client.db('simple').collection('recipies');
         const orderCollection = client.db('simple').collection('orders');
-
+        // recipie section
         app.get('/recipies', async (req, res) => {
 
             const query = {}
