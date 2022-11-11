@@ -29,6 +29,7 @@ async function run() {
             res.send(recipies)
 
         })
+        // specific recipie section
         app.get('/recipies/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) }
@@ -37,6 +38,7 @@ async function run() {
 
 
         })
+        // review data
         app.get('/orders', async (req, res) => {
 
             let query = {}
